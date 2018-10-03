@@ -34,7 +34,7 @@
 	<stripes:param name="categoryId" value="FISH" />
 	<img src="../images/fish_icon.gif" />
 </stripes:link> <br />
-water, Freshwater <br />
+ water, Freshwater <br />
 <stripes:link
 	beanclass="org.mybatis.jpetstore.web.actions.CatalogActionBean"
 	event="viewCategory">
