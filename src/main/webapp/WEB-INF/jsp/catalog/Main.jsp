@@ -34,7 +34,7 @@
 	<stripes:param name="categoryId" value="FISH - Ambhibian" />
 	<img src="../images/fish_icon.gif" />
 </stripes:link> <br />
-Saltwater,   water <br />	
+Saltwater, water <br />	
 <stripes:link
 	beanclass="org.mybatis.jpetstore.web.actions.CatalogActionBean"
 	event="viewCategory">
