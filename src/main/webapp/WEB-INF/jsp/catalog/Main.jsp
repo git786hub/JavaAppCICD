@@ -34,7 +34,7 @@
 	<stripes:param name="categoryId" value="FISH - Amphibian" />
 	<img src="../images/fish_icon.gif" />
 </stripes:link> <br />
-Seawater,  Clearwater <br />	
+Demowater,  Clearwater <br />	
 <stripes:link
 	beanclass="org.mybatis.jpetstore.web.actions.CatalogActionBean"
 	event="viewCategory">
