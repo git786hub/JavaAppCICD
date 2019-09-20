@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/jpetstore.war
+  - source: /jpetstore.war
     destination: /usr/share/tomcat8/webapps
 
