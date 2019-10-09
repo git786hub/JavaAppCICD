@@ -13,7 +13,7 @@ phases:
       - echo This always runs even if the update or install command fails 
   build:
     commands:
-      - ls && pwd && cd .. && ls
+      - ls && pwd && cd ../../../../ && ls
       - echo Entered the build phase...
       - echo Build started on `date`
       - mvn install && mvn package
