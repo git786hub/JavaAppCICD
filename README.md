@@ -45,7 +45,7 @@ Running JPetStore sample under Tomcat (using the [cargo-maven2-plugin](https://c
 
   > Note:
   >
-  > We provide maven profiles per application server as follow:
+  > We provide maven profiles per application server as follow:fgfgf
   >
   > | Profile    | Description |
   > | ---------- | ----------- |
