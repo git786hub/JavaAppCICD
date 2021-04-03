@@ -20,7 +20,7 @@ stages {
        steps { 
                  
                 sh 'mvn -B -DskipTests clean package'
-                stash includes: 'target/*.jar', name: 'targetfiles'
+                stash includes: 'target/*.war', name: 'targetfiles'
             }     
        }
   
@@ -32,7 +32,14 @@ stages {
                   }
              }
 
-        
+            steps {
+                sh 'mvn test'
+            }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
         }
     
      stage('Building image') {
