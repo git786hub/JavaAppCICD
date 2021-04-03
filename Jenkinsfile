@@ -47,7 +47,7 @@ stages {
              script {
                 unstash 'targetfiles'
                 sh 'ls -l -R'
-                dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                dockerImage = docker.build registry + ":Latest"
             }
           }
         }
@@ -68,7 +68,7 @@ stages {
    stage('Remove Unused docker image') {
       steps{
           script {
-            sh "docker rmi -f $registry:$BUILD_NUMBER"
+            sh "docker rmi -f $registry:Latest"
         }
       }
     }
